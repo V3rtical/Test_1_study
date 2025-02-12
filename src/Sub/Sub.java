@@ -3,10 +3,11 @@ package Sub;
 import Super.Super;
 
 public class Sub extends Super {
-    public int tens = 1 * 10;
+    private int tens = 1 * 10;
 
     public Sub(int t){
         super(2, 6 ,4);
+        super.Total();
         this.tens = t * 10;
     }
 

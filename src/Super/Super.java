@@ -24,6 +24,11 @@ public class Super {
     public void set_cents(double c){
         cents = c/100;
     }
+    public void set_cents(double c, double quarters){
+        cents = c/100;
+        //converts to how man quarters,
+        cents /= quarters;
+    }
     public void set_hundreds(int h){
         hundreds = h*100;
     }
@@ -39,5 +44,6 @@ public class Super {
     public double Total(){
         return ones + cents + hundreds;
     }
+
 
 }
